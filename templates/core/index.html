@@ -1,4 +1,31 @@
 {% extends 'base_site.html' %}
 
 {% block title %}Home | Glowcare{% endblock title %}
+
+
+{% block content %}
+    <div class="grid grid-cols-3 gap-7">
+        <div class="col-span-2 p-5 bg-gray-100">
+            <div>
+                <h2 class="text-gray-500 font-bold text-xl mb-2">LOCATION</h2>
+                <div class="border border-gray-300 px-5 py-3 bg-white flex justify-between">
+                    <p class="text-gray-700 font-semibold"><i class="fa-solid fa-location-dot"></i> MILWAUKEE</p>
+                    <a href="#location_modal" rel="modal:open"> Change Location</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-span-1 p-5 bg-gray-300">
+
+        </div>
+    </div>
+
+    <div id="location_modal" class="modal">
+        <p>Thanks for clicking. That felt good.</p>
+        
+    </div>
+{% endblock content %}
+ 
+ {% block extra_js %}
+    
+ {% endblock extra_js %}
     
